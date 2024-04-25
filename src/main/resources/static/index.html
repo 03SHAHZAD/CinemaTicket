@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinema Ticket</title>
+    <script src="index.js"></script>
+    <script>"https://code.jquery.com/jquery-3.7.1.min.js"</script>
+
+</head>
+<body>
+<div class="container">
+    <section class="order-ticket">
+        <h1>ORDERING MOVIE TICKETS</h1>
+        <label for="film">Movie: </label>
+        <select id="film" name="film">
+            <option value="" disabled selected>Select movie</option>
+            <option value="Github's Downfall">Github's Downfall</option>
+            <option value="The Hub of Gits">The Hub of Gits</option>
+        </select><br>
+        <span id="filmError" class="error-message"></span><br><br>
+
+        <label for="quantity">Number of tickets: </label>
+        <input type="text" id="quantity" required><br>
+        <span id="quantityError" class="error-message"></span><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="firstname">First Name: </label>
+                </td>
+                <td>
+                    <input type="text" id="firstname" required>
+                    <span id="firstnameError" class="error-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lastname">Last Name: </label>
+                </td>
+                <td><input type="text" id="lastname" required>
+                    <span id="lastnameError" class="error-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phonenumber">Phone Number: </label>
+                </td>
+                <td>
+                    <input type="text" id="phonenumber" required>
+                    <span id="phonenumberError" class="error-message"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email Address: </label>
+                </td>
+                <td>
+                    <input type="text" id="email" required>
+                    <span id="emailError" class="error-message"></span>
+                </td>
+            </tr>
+        </table>
+        <button onclick="BuyTicket()">Buy a silly ticket</button>
+    </section>
+
+    <section class="view-tickets">
+        <h2>All tickets</h2>
+        <ul id="ticketList"></ul>
+        <button onclick="deleteTickets()">Delete all silly tickets</button>
+    </section>
+</div>
+</body>
+</html>

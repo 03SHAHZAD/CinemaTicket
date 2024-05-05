@@ -9,3 +9,4 @@ Github repo URL: https://github.com/03SHAHZAD/CinemaTicket
 
 Fullt navn: Mohammad Shahzad Iftikhar
 
+youtube mlink: https://youtube.com/shorts/-wNFgceBMZc?si=yhzsFKyEh7eVj0Uc
